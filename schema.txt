@@ -1,0 +1,32 @@
+countries
+-
+country_code VARCHAR PK
+country VARCHAR
+population INTEGER
+gdp_per_capita INTEGER
+
+summer
+-
+summer_id INTEGER PK
+year VARCHAR
+city VARCHAR
+sport VARCHAR
+discipline VARCHAR
+athlete VARCHAR
+country_code VARCHAR FK >- countries.country_code
+gender VARCHAR
+event VARCHAR
+medal VARCHAR
+
+winter
+-
+winter_id INTEGER PK
+year VARCHAR
+city VARCHAR
+sport VARCHAR
+discipline VARCHAR
+athlete VARCHAR
+country_code VARCHAR FK >- countries.country_code
+gender VARCHAR
+event VARCHAR
+medal VARCHAR
